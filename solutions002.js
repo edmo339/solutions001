@@ -20,4 +20,5 @@ function arrAdder(arr) {
       sentence+=" ";
     }
     return sentence.trim();
+    
   }
