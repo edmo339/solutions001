@@ -13,10 +13,11 @@ Your goal in this kata is to determine which phrase the girls would say for a fl
 */
 
 function howMuchILoveYou(nbPetals) {
-    let arry = ['I love you' , 'a little' , 'a lot', 'passionately' , 'madly', 'not at all', 
-               'I love you' , 'a little' , 'a lot' , 'passionately' , 'madly', 'not at all']
-    
-      return arry[nbPetals - 1]
+    let arry = ['I love you' , 'a little' , 'a lot', 'passionately' , 'madly', 'not at all']
+        let num = nbPetals % 6
+      return arry[num - 1]
         }
 
-        console.log(howMuchILoveYou(7))
+       
+
+        console.log(howMuchILoveYou(422))
