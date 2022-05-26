@@ -16,3 +16,19 @@ interest(100, 0.1,  1)  =  [110, 110]
 interest(100, 0.1,  2)  =  [120, 121]
 interest(100, 0.1, 10)  =  [200, 259]
 */
+
+
+function interest(P,r,n) {
+    let simple = P +(P * r * n)
+    
+    for ( let i = 0; i < n; i++){
+      P += (P * r )
+        }
+    
+    return [Math.round(simple), Math.round(P)]
+  }
+
+
+  
+  console.log(interest(100,0.1,1))
+  console.log(interest(100,0.1,2))
