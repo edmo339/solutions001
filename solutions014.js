@@ -9,3 +9,12 @@ Sum: (10 - 2) + (2 - 1) = 8 + 1 = 9
 
 If the array is empty or the array has only one element the result should be 0 (Nothing in Haskell, None in Rust).
 */
+
+function sumOfDifferences(arr) {
+    let sorted = arr.sort((a, b) => b - a)
+    let sum = 0;
+    for (let i = 0; i < sorted.length - 1; i++) {
+      sum += (arr[i] - arr[i + 1]);
+    }
+    return sum;
+  }
