@@ -24,4 +24,4 @@ function isNarcissistic(n) {
 
   console.log(isNarcissistic(153))
 
-  
+  return n === +n.toString().split('').reduce((s, v, i, arr) => s + Math.pow(v, arr.length),0)
