@@ -11,12 +11,25 @@ ghostBusters("Sky scra per");
 Should return:
 
 "Skyscraper"
-*/
+If the building contains no ghosts, return the string:
+
+"You just wanted my autograph didn't you?"
 
 function ghostBusters(building) {
     return building.replaceAll(" ","")
   }
 
+*/
+  function ghostBusters(building) {
+    building.split(' ')
+    if (building.includes(' ')){
+        return building.replaceAll(' ', '')
+        }
+        else {
+          return "You just wanted my autograph didn't you?"
+         }
+    
+  }
   console.log(ghostBusters("Factor y"))
   console.log(ghostBusters("O  f fi ce"))
-  console.log(ghostBusters("Bus St at ion"))
+  console.log(ghostBusters("BusStation"))
