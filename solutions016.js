@@ -12,3 +12,11 @@ Should return:
 
 "Skyscraper"
 */
+
+function ghostBusters(building) {
+    return building.replaceAll(" ","")
+  }
+
+  console.log(ghostBusters("Factor y"))
+  console.log(ghostBusters("O  f fi ce"))
+  console.log(ghostBusters("Bus St at ion"))
