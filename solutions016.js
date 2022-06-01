@@ -19,7 +19,7 @@ function ghostBusters(building) {
     return building.replaceAll(" ","")
   }
 
-*/
+
   function ghostBusters(building) {
     building.split(' ')
     if (building.includes(' ')){
@@ -31,5 +31,22 @@ function ghostBusters(building) {
     
   }
   console.log(ghostBusters("Factor y"))
+  console.log(ghostBusters("O  f fi ce"))
+  console.log(ghostBusters("BusStation"))
+*/
+  function ghostBusters(building) {
+    building.split(' ')
+   if (building.includes(' ')){
+     for(let i =0; i< building.length; i++){
+       if (building[i] = ' '){
+         building.pop(building[i])
+     }}
+   } else {
+          return "You just wanted my autograph didn't you?"
+         }
+    
+        }
+
+        console.log(ghostBusters("Factor y"))
   console.log(ghostBusters("O  f fi ce"))
   console.log(ghostBusters("BusStation"))
