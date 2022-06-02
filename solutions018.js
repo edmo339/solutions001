@@ -16,3 +16,6 @@ In this Kata, a string is said to be in ALL CAPS whenever it does not contain an
 String.prototype.isUpperCase = function() {
     return this.toUpperCase() == this;
   }
+
+  console.log('HELLO I AM DONALD'.isUpperCase())
+  console.log('where are you from?'.isUpperCase())
