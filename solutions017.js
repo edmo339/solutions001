@@ -7,3 +7,6 @@ The number of dogs will always be a number and there will always be at least 1 d
 
 Good luck!
 */
+const dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIANS!!!"];
+
+const howManyDalmatians = number  => number <= 10 ? dogs[0] : (number <= 50 ? dogs[1] : (number == 101 ? dogs[3] : dogs[2]));
