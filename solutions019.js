@@ -8,3 +8,7 @@ Example:
 None of the arrays will be empty, so you don't have to worry about that!
 */
 
+function removeEveryOther(arr){
+    let newArr = arr.map(num => num % 2 === 0)
+    return newArr
+  }
