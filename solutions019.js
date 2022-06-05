@@ -6,7 +6,7 @@ Example:
 ["Keep", "Remove", "Keep", "Remove", "Keep", ...] --> ["Keep", "Keep", "Keep", ...]
 
 None of the arrays will be empty, so you don't have to worry about that!
-*/
+
 
 function removeEveryOther(arr){
     let newArr = []
@@ -17,3 +17,9 @@ function removeEveryOther(arr){
     }
     return newArr
   }
+  */
+
+  function removeEveryOther(arr){
+      newArr = arr.filter((num, index) => 
+      index % 2 === 0)
+      return newArr}
