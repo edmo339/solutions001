@@ -9,6 +9,11 @@ None of the arrays will be empty, so you don't have to worry about that!
 */
 
 function removeEveryOther(arr){
-    let newArr = arr.map(num => num % 2 === 0)
+    let newArr = []
+    for (let i =0; i<arr.length; i++){
+      if (i % 2 === 0){
+        newArr.push(arr[i])
+      }
+    }
     return newArr
   }
