@@ -6,4 +6,10 @@ Example output:
 Hello, Mr. Spock
 */
 
+function sayHello(name) {
+    return 'Hello, ' + name
+  }
 
+Test.assertEquals(sayHello('Mr. Spock'), 'Hello, Mr. Spock')
+Test.assertEquals(sayHello('Captain Kirk'), 'Hello, Captain Kirk')
+Test.assertEquals(sayHello('Liutenant Uhura'), 'Hello, Liutenant Uhura')
