@@ -7,3 +7,12 @@ sayHello(['John', 'Smith'], 'Phoenix', 'Arizona')
 This example will return the string Hello, John Smith! Welcome to Phoenix, Arizona!
 
 */
+
+function sayHello( name, city, state ) {
+    if (name.length === 2){
+    return 'Hello, ' + name[0] + ' ' + name[1]  +'! Welcome to ' + city + ', ' + state +'!'
+  }
+    else {
+      return 'Hello, ' + name[0] + ' ' + name[1] + ' ' + name[2] +'! Welcome to ' + city + ', ' + state +'!'
+    }
+    }
