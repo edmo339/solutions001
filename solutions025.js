@@ -13,7 +13,7 @@ For example: (Input --> Output)
 2 --> 3
 3 --> 6
 -10 --> 0
-*/
+
 
 function triangular( n ) {
     let num = 0
@@ -24,4 +24,7 @@ function triangular( n ) {
     return num
   }else {return 0}
     }
-  
+  */
+
+    function triangular( n ) {
+        return (n > 0) ? ((n * n) + n) / 2 : 0;
