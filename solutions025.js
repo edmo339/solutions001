@@ -15,3 +15,13 @@ For example: (Input --> Output)
 -10 --> 0
 */
 
+function triangular( n ) {
+    let num = 0
+    for (let i = 0; i <= n; i++){
+      num += i
+    }
+    if (num > 0){
+    return num
+  }else {return 0}
+    }
+  
