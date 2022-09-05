@@ -8,14 +8,18 @@ remove("!Hi") == "!Hi"
 remove("!Hi!") == "!Hi"
 remove("Hi! Hi!") == "Hi! Hi"
 remove("Hi") == "Hi"
-*/
+
 function remove (string) {
+
     if (string.endsWith('!')){
-        const newString = string.slice(0,-1)
-        console.log(newString)
+        string = string.slice(0,-1)
+        
 }
-
-
+  return string
   }
+  */
+  function remove(s){
+    //coding and coding....
+    return s = s.replace(/!$/g, '')}
 
-  remove("Hi! Hi!")
+  console.log(remove("Hi! Hi!!!!"))
