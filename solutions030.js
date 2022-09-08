@@ -24,5 +24,10 @@ function countingValleys(s) {
     let F = 0
     let U = 1
     let D = -1
-    
+    let valleys = 0
+    for (i =0; i<=s.length; i++){
+        if((i-1)<0 && i === 0){
+            valleys = valleys + 1
+        }
+    } return valleys
   }
