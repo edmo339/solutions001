@@ -30,5 +30,6 @@ function interest(P,r,n) {
 
 
   
+  
   console.log(interest(100,0.1,1))
   console.log(interest(100,0.1,2))
