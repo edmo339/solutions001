@@ -9,3 +9,16 @@ describe("Max Character", () => {
 
 No String or Array Methods (well brute force it first, but then no methods)! 
 */
+
+function maxCharacter (str) {
+    let charMap = {},
+    count = 0,
+    maxChar = null
+
+    for (const char of str){
+        charMap[char] = charMap[char] + 1 || 1
+    }
+    return charMap
+}
+
+console.log(maxCharacter("Hello World!"))
