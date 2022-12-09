@@ -18,7 +18,12 @@ function maxCharacter (str) {
     for (const char of str){
         charMap[char] = charMap[char] + 1 || 1
     }
-    return charMap
+    for (const char in charMap)
+    if(charMap[char]>count){
+        count = charMap[char]
+        maxChar = char
+    }
+    return maxChar
 }
 
 console.log(maxCharacter("Hello World!"))
