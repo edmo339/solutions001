@@ -17,3 +17,6 @@ function withoutLast(arr) {
     // arr.pop(); // removes the last element
     return arr.slice(0,-1);
   }
+
+
+  console.log(withoutMax([3,4,5,6,7,8]))
