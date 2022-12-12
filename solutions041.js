@@ -4,10 +4,16 @@ In this kata the function returns an array/list of numbers without its last elem
 Good luck!
 
 Hint: watch out for side effects.
-*/
+
 
 function withoutLast(arr) {
     // Fix it
     arr.pop(); // removes the last element
     return arr;
+  }
+*/
+  function withoutMax(arr) {
+    // Fix it
+    // arr.pop(); // removes the last element
+    return arr.slice(0,-1);
   }
