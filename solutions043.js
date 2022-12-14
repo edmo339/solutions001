@@ -15,12 +15,16 @@ Output: 2
 */
 
 function findMaj (arr) {
-    let numMap = {}
-    for ( let i = 0; i < arr.length; i++){
-        let num = arr[i]
-        numMap[num] 
-    }
-    return numMap
+    let numMap = {},
+        count = 0,
+        majEle = arr[0]
+
+for (const num of arr){
+    numMap[num] = numMap[num] +1 || 1
 }
+return numMap
+    }
+  
+
 
 console.log(findMaj([2,2,1,1,1,2,2]))
