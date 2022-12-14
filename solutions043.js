@@ -22,9 +22,15 @@ function findMaj (arr) {
 for (const num of arr){
     numMap[num] = numMap[num] +1 || 1
 }
-return numMap
+for (const n in numMap){
+    if(numMap[n] > count){
+        count = numMap[n]
+        majEle = n
+    }
+} return majEle
     }
   
 
 
 console.log(findMaj([2,2,1,1,1,2,2]))
+console.log(findMaj([3,2,3]))
