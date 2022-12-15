@@ -36,4 +36,8 @@ const magazine =
     const magazineWords = magazine.split(' ')
     const magazineHash = {}
     let possible = true
-   }
+   
+    for(word of magazineWords){
+        magazineHash[word] = magazineHash[word] +1 || 1
+    }
+}
