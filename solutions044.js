@@ -40,4 +40,14 @@ const magazine =
     for(word of magazineWords){
         magazineHash[word] = magazineHash[word] +1 || 1
     }
+
+    for (word in noteWords){
+      if(magazineHash[word]){
+        magazineHash[word]--
+      }else{
+
+        possible = false
+      }
+    }
+    return possible
 }
